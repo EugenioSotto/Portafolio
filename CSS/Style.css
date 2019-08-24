@@ -82,7 +82,7 @@ h1 {
 .Project {
     border: 1px solid gray;
     border-radius: 10px;
-    margin: 0px 50px;
+    margin: 50px;
     background: white;
     display: flex;
     height: 300px;
@@ -101,7 +101,7 @@ h1 {
 }
 
 .ProjectDetails p {
-    margin: 8px;;
+    margin: 8px 0px;
 }
 
 .Project figure {
@@ -114,4 +114,20 @@ h1 {
 .Project figure img {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.Footer {
+    background: var(--dark-primary-color);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.Footer p {
+    margin: 20px 10px;
 }
