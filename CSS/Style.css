@@ -1,5 +1,5 @@
 :root {
-    --light-primary-color: #7aacda;
+    --light-primary-color: #a2caf0;
     --dark-primary-color:#296092;
     --primaray-color: #3e87c9;
     --text: #FFFFFF;
@@ -32,10 +32,6 @@ h1 {
     letter-spacing: -2pt;
 }
 
-.Hero strong {
-    color: var(--accent-color);
-}
-
 .Header {
     background: var(--dark-primary-color);
     color: var(--text);
@@ -60,16 +56,35 @@ h1 {
     background-position-x: right;
 }
 
+.Hero strong {
+    color: var(--accent-color);
+}
+
 /* .Project{
     display: flex;
 } */
 
+.Portafolio{
+    background: var(--light-primary-color);
+}
+
+.Project {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 0px 50px;
+    background: white;
+}
+
 .ProjectDetails {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 400px;
 }
 
 .Project figure {
     width: 400px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+}
+
+.Project figure img {
+    border-radius: 10px;
 }
