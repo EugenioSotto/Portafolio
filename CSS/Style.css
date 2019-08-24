@@ -85,22 +85,33 @@ h1 {
     margin: 0px 50px;
     background: white;
     display: flex;
-    padding: 20px 0px 20px 20px;
+    height: 300px;
+    /* padding: 20px 0px 20px 20px; */
 }
 
 .ProjectDetails {
     /* border: 1px solid red; */
     width: 400px;
-    margin: 10px:
+    margin: 10px;
+    padding: 10px;
+}
+
+.ProjectDetails h4 {
+    margin: 15px 0px;
+}
+
+.ProjectDetails p {
+    margin: 8px;;
 }
 
 .Project figure {
-    height: 100%
+    height: 300px;
     /* width: 500px; */
     margin: 0;
     /* border: 1px solid blue; */
 }
 
 .Project figure img {
-    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
