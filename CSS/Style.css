@@ -1,8 +1,8 @@
-:root{
+:root {
     --light-primary-color: #7aacda;
     --dark-primary-color:#296092;
     --primaray-color: #3e87c9;
-    --text-icons: #FFFFFF;
+    --text: #FFFFFF;
     --accent-color: #c9803e;
     --primary-text: #212121;
     --secondary-text: #757575;
@@ -12,7 +12,7 @@
 
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     background: var(--light-primary-color);
@@ -25,22 +25,39 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 
-h1{
+h1 {
     font-size: 48pt;
     line-height: 1.3;
     letter-spacing: -2pt;
+}
+
+.Header {
+    background: var(--dark-primary-color);
+    color: var(--text);
+}
+
+.Header a {
+    color: var(--text);
+    text-decoration: none;
+
+}
+
+.Hero {
+    border: 1px solid greenyellow;
+    height: 500px;
+
 }
 
 /* .Project{
     display: flex;
 } */
 
-.ProjectDetails{
+.ProjectDetails {
     border: 1px solid red;
     width: 400px;
 }
 
-.Project figure{
+.Project figure {
     width: 400px;
     border: 1px solid blue;
 }
