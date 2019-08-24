@@ -30,3 +30,17 @@ h1{
     line-height: 1.3;
     letter-spacing: -2pt;
 }
+
+/* .Project{
+    display: flex;
+} */
+
+.ProjectDetails{
+    border: 1px solid red;
+    width: 400px;
+}
+
+.Project figure{
+    width: 400px;
+    border: 1px solid blue;
+}
