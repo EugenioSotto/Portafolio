@@ -35,10 +35,22 @@ h1 {
 .Header {
     background: var(--dark-primary-color);
     color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.Header li {
+.Header figure {
+    margin: 10px;
+}
+
+.Header ul {
     list-style: none;
+    display: flex;
+}
+
+.Header li{
+    margin: 0px 12px;
 }
 
 .Header a {
@@ -60,10 +72,6 @@ h1 {
     color: var(--accent-color);
 }
 
-/* .Project{
-    display: flex;
-} */
-
 .Portafolio{
     background: var(--light-primary-color);
 }
@@ -73,15 +81,20 @@ h1 {
     border-radius: 10px;
     margin: 0px 50px;
     background: white;
+    display: flex;
+    padding: 20px 0px 20px 20px;
 }
 
 .ProjectDetails {
     /* border: 1px solid red; */
     width: 400px;
+    margin: 10px:
 }
 
 .Project figure {
-    width: 400px;
+    height: 100%
+    /* width: 500px; */
+    margin: 0;
     /* border: 1px solid blue; */
 }
 
