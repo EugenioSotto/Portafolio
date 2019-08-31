@@ -33,6 +33,17 @@ h1 {
     margin: 10px;
 }
 
+h2 {
+    font-size: 28pt;
+    color: var(--dark-primary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 50px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .Header {
     background: var(--dark-primary-color);
     background-position: bottom;
@@ -88,16 +99,6 @@ h1 {
     justify-content: center; */
 }
 
-.Portafolio h2 {
-    font-size: 28pt;
-    color: var(--dark-primary-color);
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-left: 50px;
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .Portafolio article {
     width: 900px;
