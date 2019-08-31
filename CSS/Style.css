@@ -199,6 +199,10 @@ h2 {
     margin: 10px 0;
 }
 
+.ExperienceDescription {
+    text-align: left;
+}
+
 .ExperienceURL {
     text-decoration: none;
     color: var(--primaray-color);
@@ -215,8 +219,50 @@ h2 {
 
 }
 
-.ExperienceDescription {
-    text-align: left;
+.Contact {
+    background: var(--primaray-color);
+    color: var(--text);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.ContactFormLabel {
+    display: block;
+}
+
+.SocialContainer {
+    border: 1px solid red;
+}
+
+.SocialLink {
+    width: 50px;
+    height: 50px;
+    border: 1px snow solid;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.SocialLink.Instagram {
+    background-image: url(../IMG/Instagram.svg);
+    background-size: 100%;
+}
+
+.SocialLink.Vimeo {
+    background-image: url(../IMG/Vimeo.svg);
+    background-size: 100%;
+}
+
+.SocialLink.Twitter {
+    background-image: url(../IMG/Twitter.svg);
+    background-size: 100%;
+}
+
+.SocialLink.GitHub {
+    background-image: url(../IMG/GitHub.svg);
+    background-size: 100%;
 }
 
 .Footer {
