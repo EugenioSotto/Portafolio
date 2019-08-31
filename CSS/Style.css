@@ -1,4 +1,5 @@
 :root {
+    --body-color: #bbdefb;
     --light-primary-color: #a2caf0;
     --dark-primary-color:#296092;
     --primaray-color: #3e87c9;
@@ -15,7 +16,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: var(--light-primary-color);
+    background: var(--body-color);
     font-family: var(--font-text);
     color: var(--primary-text);
 }
@@ -92,7 +93,7 @@ h2 {
 }
 
 .Portafolio {
-    background: var(--light-primary-color);
+    /* background: var(--light-primary-color); */
     /* width: 900px; */
     /* display: flex;
     flex-direction: column;
@@ -119,7 +120,7 @@ h2 {
 
 .ProjectDetails {
     /* border: 1px solid red; */
-    /* width: 400px; */
+    width: 400px;
     margin: 10px;
     padding: 10px;
 }
@@ -144,6 +145,7 @@ h2 {
     height: 300px;
     /* width: 900px; */
     margin: 0;
+    /* overflow: hidden; */
     /* border: 1px solid blue; */
 }
 
@@ -162,13 +164,17 @@ h2 {
 }
 
 .Experience {
+    background: var(--light-primary-color);
     margin: 10px;
     border: 2px solid var(--accent-color);
     width: 480px;
     background: lightcyan;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
-.ExperienceImgContainer{
+.ExperienceImgContainer {
     margin: 0;
 }
 
@@ -176,6 +182,41 @@ h2 {
     width: 480px;
     height: 300px;
     object-fit: cover;
+}
+
+.ExperienceDetails {
+    margin: 20px 30px;
+    margin-top: -80px;
+    position: relative;
+    background: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.ExperienceTitle {
+    font-size: 20pt;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.ExperienceURL {
+    text-decoration: none;
+    color: var(--primaray-color);
+    border-radius: 10px;
+    padding: 5px 30px;
+    border: 2px solid var(--primaray-color);
+    transition: 350ms all;
+    margin: 20px;
+}
+
+.ExperienceURL:hover {
+    background: var(--primaray-color);
+    color: var(--text);
+
+}
+
+.ExperienceDescription {
+    text-align: left;
 }
 
 .Footer {
