@@ -231,38 +231,32 @@ h2 {
 
 .ContactFormLabel {
     display: block;
-}
-
-.SocialContainer {
-    border: 1px solid red;
+    font-size: 25pt;
 }
 
 .SocialLink {
     width: 50px;
     height: 50px;
-    border: 1px snow solid;
+    /* border: 1px snow solid; */
     display: inline-block;
     margin: 0 5px;
+    background-size: 100%;
 }
 
 .SocialLink.Instagram {
     background-image: url(../IMG/Instagram.svg);
-    background-size: 100%;
 }
 
 .SocialLink.Vimeo {
     background-image: url(../IMG/Vimeo.svg);
-    background-size: 100%;
 }
 
 .SocialLink.Twitter {
     background-image: url(../IMG/Twitter.svg);
-    background-size: 100%;
 }
 
 .SocialLink.GitHub {
     background-image: url(../IMG/GitHub.svg);
-    background-size: 100%;
 }
 
 .Footer {
