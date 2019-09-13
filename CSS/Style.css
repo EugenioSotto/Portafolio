@@ -40,9 +40,20 @@ h2 {
     text-transform: uppercase;
     font-weight: 700;
     margin-left: 50px;
-    width: 900px;
+    /* width: 900px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
+}
+/* * Clases utilitarias */
+.wrapper {
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
 }
 
 .Header {
@@ -161,11 +172,12 @@ h2 {
 
 .ExperienceContainter {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .Experience {
     background: var(--light-primary-color);
-    margin: 10px;
+    margin: 8px;
     border: 2px solid var(--accent-color);
     width: 480px;
     background: lightcyan;
