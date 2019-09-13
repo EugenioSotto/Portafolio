@@ -216,13 +216,12 @@ h2 {
 .ExperienceURL:hover {
     background: var(--primaray-color);
     color: var(--text);
-
 }
 
 .Contact {
     background: var(--primaray-color);
     color: var(--text);
-    height: 100px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -231,7 +230,39 @@ h2 {
 
 .ContactFormLabel {
     display: block;
-    font-size: 25pt;
+    font-size: 23pt;
+    font-weight: 700;
+}
+
+.ContactFormEmail {
+    margin: 10px 0;
+    padding: 5px 20px 5px 25px;
+    border-radius: 5px;
+    border: solid 2px grey;
+    background-image: url(../IMG/envelope.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.ContactFormButton {
+    display: block;
+    width: 100px;
+    padding: 6px 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 350ms all;
+}
+
+.ContactFormButton:hover {
+    color: var(--primaray-color);
+    background: white;
 }
 
 .SocialLink {
