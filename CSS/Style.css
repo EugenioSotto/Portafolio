@@ -47,13 +47,14 @@ h2 {
 /* * Clases utilitarias */
 .wrapper {
     /* border: 1px solid red; */
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+    flex: 1;
 }
 
 .Header {
@@ -67,17 +68,18 @@ h2 {
     flex-wrap: wrap;
 }
 
-.Header figure {
+.Logo {
     margin: 6px;
 }
 
-.Header ul {
+.NavbarList {
     margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
 }
 
-.Header li{
+.NavbarItem {
     margin: 0px 12px;
 }
 
@@ -331,8 +333,26 @@ h2 {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+    .Header {
+        display: block;
+        
+    }
 
+    .Logo {
+        margin: 0px;
+        padding: 15px 0 0;
+        text-align: center;
+    }
+
+    .NavbarList {
+        display: block;
+    }
+
+    .NavbarItem {
+        margin: 25px 0;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 480px) {
