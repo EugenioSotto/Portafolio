@@ -91,6 +91,7 @@ h2 {
     background: var(--primaray-color);
     background-image: url(../IMG/Land01.jpeg);
     background-size: 100%;
+    background-position: center top;
     background-repeat: no-repeat;
     background-position-x: center;
     /* background-attachment: fixed; */
@@ -202,6 +203,7 @@ h2 {
     position: relative;
     background: white;
     padding: 10px;
+    border-radius: 2px;
     text-align: center;
 }
 
