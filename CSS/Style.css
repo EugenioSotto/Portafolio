@@ -319,3 +319,21 @@ h2 {
 .Footer p {
     margin: 20px 10px;
 }
+
+/* ! RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen adn (max-width: 320px) {
+    
+}
