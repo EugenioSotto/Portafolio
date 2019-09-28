@@ -10,7 +10,6 @@
     --divided-color: #bdbdbd;
     --font-title:'Comfortaa', cursive;
     --font-text:'Roboto', sans-serif;
-
 }
 
 body {
@@ -24,14 +23,6 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: var(--font-title);
     font-weight: 400;
-}
-
-h1 {
-    color: var(--text);
-    font-size: 48pt;
-    line-height: 1.3;
-    letter-spacing: -2pt;
-    margin: 10px;
 }
 
 h2 {
@@ -88,19 +79,20 @@ h2 {
     text-decoration: none;
 }
 
-.Hero {
+.Hero { 
+    padding: 170px 0px 50px;
     /* border: 1px solid greenyellow; */
-    height: 600px;
+    /* min-height: 600px; */
     background: var(--primaray-color);
     background-image: url(../IMG/Land01.jpeg);
     background-size: 100%;
-    background-position: center top;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position-x: center;
     /* background-attachment: fixed; */
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    font-size: 24pt;
 }
 
 .Hero strong {
@@ -108,20 +100,19 @@ h2 {
 
 }
 
-.Portafolio {
-    /* background: var(--light-primary-color); */
-    /* width: 900px; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+.HeroTitle {
+    color: var(--text);
+    font-size: 2em;
+    line-height: 1.3;
+    letter-spacing: -2pt;
+    margin: 10px;
 }
 
-
-.Portafolio article {
+/* .Portafolio article {
     width: 900px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .Project {
     border: 1px solid var(--dark-primary-color);
@@ -130,16 +121,21 @@ h2 {
     background: white;
     display: flex;
     flex-wrap: wrap;
+    /* align-items: center;  */
     /* height: 300px; */
     /* width: 900px; */
-    /* padding: 20px 0px 20px 20px; */
 }
+
+.Project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 
 .ProjectDetails {
     /* border: 1px solid red; */
-    width: 400px;
-    margin: 10px;
-    padding: 10px;
+    width: 50%;
+    /* margin: 10px; */
+    /* padding: 10px; */
 }
 
 .ProjectTitle {
@@ -155,30 +151,36 @@ h2 {
 
 .ProjectDescription {
     margin: 12px 0;
-    font-size: 12pt;    
+    font-size: 12pt;   
 }
 
-.Project figure {
-    height: 300px;
-    /* width: 900px; */
+.ProjectImageContainer {
+    /* height: 100%; */
+    width: 50%;
     margin: 0;
-    /* overflow: hidden; */
-    /* border: 1px solid blue; */
 }
 
-.ProjectImageContainerImp img{
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-.ProjectImageContainer img {
+.Project:nth-child(even) .ProjectImageContainer {
+    border-top-right-radius: 10px; 
     border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.Project:nth-child(odd) .ProjectImageContainer {
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+}
+.ProjectImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .ExperienceContainter {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .Experience {
@@ -349,16 +351,82 @@ h2 {
         display: block;
     }
 
+    .Navbar ul {
+        margin: 0;
+    }
+
     .NavbarItem {
-        margin: 25px 0;
+        margin: 25px 0 0;
         text-align: center;
+    }
+
+    .Hero {
+        font-size: 15pt;
+        padding: 70px 0 25px;
+    }
+
+    .Project {
+        display: block;
+    }
+
+    .ProjectDetails {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .ProjectImageContainerImp {
+        width: 100%;
+    }
+
+    .ProjectImageContainer {
+        width: 100%;
+    }
+    
+    .ProjectTitle{
+        font-size: 2em;
+    }
+
+    .ProjectSubtitle {
+        font-size: 1.4em
+
+    }
+
+    .ProjectDate .ProjectURL {
+        font-size: .7em;
+    }
+
+    .ExperienceDescription {
+        font-size: 1.2em;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .ProjectDetails {
+        font-size: 12px;
+    }
+
+    .ProjectDate .ProjectURL {
+        font-size: 1em;
+    }
+
+    .Hero {
+        font-size: 12pt;
+        padding: 50px 0 15px;
+    }
+
+    .Experience {
+        width: 90%;
+    }
+
+    .ExperienceImg {
+        width: 100%;
+    }
 
 }
 
-@media screen adn (max-width: 320px) {
+@media screen and (max-width: 320px) {
+    .Hero {
+        padding: 0;
+    }
 
 }
