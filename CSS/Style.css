@@ -102,7 +102,7 @@ h2 {
     background: var(--dark-primary-color);
     background-position: bottom;
     color: var(--text);
-    font-size: 18pt;
+    font-size: 12pt;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -395,8 +395,22 @@ h2 {
     }
     
     .Header {
-        display: block;
-        
+        display: block;   
+    }
+
+    .Menu {
+        position: fixed;
+        background: var(--dark-primary-color);
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        z-index: 998;
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
+    }
+
+    .Menu .Active {
+        left: 0;
     }
 
     .Logo {
@@ -406,11 +420,12 @@ h2 {
     }
 
     .NavbarList {
-        display: block;
-    }
-
-    .Navbar ul {
+        display: flex;
         margin: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: inherit;
+        font-size: 20pt;    
     }
 
     .NavbarItem {
