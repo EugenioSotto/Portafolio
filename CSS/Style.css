@@ -102,7 +102,7 @@ h2 {
     background: var(--dark-primary-color);
     background-position: bottom;
     color: var(--text);
-    font-size: 8pt;
+    font-size: 10pt;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,6 +186,7 @@ h2 {
     width: 47%;
     /* margin: 10px; */
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .ProjectTitle {
@@ -197,6 +198,11 @@ h2 {
 
 .ProjectSubtitle, .ProjectDate, .ProjectURL {
     margin: 10px 0px;
+}
+
+.ProjectURL a {
+    color: var(--primary-text);
+    text-decoration: none;
 }
 
 .ProjectDescription {
